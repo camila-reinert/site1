@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/roupas.css">
+    <link rel="stylesheet" type="text/css" href="../css/telaprodutos.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <div class="cabecalho">
+        <div class="springshop">
+            <div class="texto2">Produtos</div>
+        </div>
+
+        <div class="navigation">
+            <div class="toggle"><span></span></div>
+            <ul>
+                <li style="--i:1;"><a href="index.html">Inicio</a></li>
+                <li style="--i:2;"><a href="pages/sobre.html">Sobre</a></li>
+                <li style="--i:3;"><a href="pages/carrinho.html">Carrinho</a></li>
+                <li style="--i:4;"><a href="#">Favoritos</a></li>
+                <li style="--i:5;"><a href="pages/cadastro.html">Cadastre-se</a></li>
+                <li style="--i:5;"><a href="#">Produtos</a></li>
+   
+            </ul>
+           
+        </div>
+        <script>
+            let navigation = document.querySelector('.navigation');
+            document.querySelector('.toggle').onclick = function()
+            {
+                this.classList.toggle('active');
+                navigation.classList.toggle('active');
+   
+            }
+        </script>
+    </div>
+    <div class="Folha"><img src="../images/Folha.png" width="630px"></div>
+
+    <div class="botoes">
+        <div class="BT">
+            <button class="categoria">Moletons/Casacos</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Blusas</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Camisetas</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Calças</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Shorts</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Biquini</button>
+        </div>
+    </div>
+    <div class="carrosel">
+        <div class="promocao"></div>
+        <div class="promocao"></div>
+        <div class="promocao"></div>
+        <div class="promocao"></div>
+        <div class="promocao"></div>
+        <div class="promocao"></div>
+        <div class="promocao"></div>
+    </div>
+    
+    </body>
+    </html>

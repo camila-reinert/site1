@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sobre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+
+    <style>
+        body
+        {
+            background-image: url(../images/sobre.png);
+            width: 100%; /*largura*/
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;        
+        }
+        .sobre
+        {
+            width: 45px;/*largura*/
+            height: 30px;/*altura*/
+            margin-top: 90px;
+        }
+        .linha
+        {
+            background-color: white;
+            width: 100%;
+            height: 5px;
+            margin-top: 15px;
+        }
+        .texto
+        {
+            width: 130px;
+            height: 70px;
+            margin-top: 18px;
+            margin-right: 90%;
+            justify-content: space-between;
+            font-size: 40px; /*tamanho da letra*/
+            font-family: 'Gabriela';
+            
+        }
+        .texto2
+        {
+            width: 90%;
+            height: 100%px;
+            margin-top: 50px;
+            justify-content: space-between;
+            font-size: 25px; /*tamanho da letra*/
+            font-family: 'Gabriela';
+        }
+        
+   </style>
+</head>
+<body>
+    <div class="texto">
+     SOBRE
+    </div>
+    <div class="navigation">
+        <div class="toggle"><span></span></div>
+        <ul>
+            <li style="--i:1;"><a href="index.html">Inicio</a></li>
+            <li style="--i:2;"><a href="../pages/sobre.html">Sobre</a></li>
+            <li style="--i:3;"><a href="#">Carrinho</a></li>
+            <li style="--i:4;"><a href="#">Favoritos</a></li>
+            <li style="--i:5;"><a href="../pages/cadastro.html">Cadastre-se</a></li>
+            <li style="--i:5;"><a href="#">Produtos</a></li>
+
+        </ul>
+       
+    </div>
+    <script>
+        let navigation = document.querySelector('.navigation');
+        document.querySelector('.toggle').onclick = function()
+        {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+
+        }
+    </script>
+    <div class="linha"></div>
+    <div class="texto2">
+         A empresa Spring Shop foi fundada em 2022 em Joinville. Como outras grandes marcas, começou com a fabricação de peças de couro feitas artesanalmente e decidimos
+        então fazer criações de roupas sustentáveis visando ajudar o meio ambiente e com o objetivo de alcançar maior demanda de pedidos no Brasil.
+    </div>
+</body>
+</html>

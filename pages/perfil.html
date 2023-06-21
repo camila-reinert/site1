@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <style>
+        body
+        {
+            background-color: #FFE8C7;
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            overflow: hidden;
+        }
+        .cabecalho
+        {
+            background-image: linear-gradient(to right, #FF3131, #FF914D);
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .linha_cabecalho
+        {
+            background-color: black;
+            width: 100%;
+            height: 4px;
+        }
+        .texto
+        {
+            width: 200px;
+            height: 60px;
+            font-family: 'Gabriela', serif;
+            font-size: 40px;
+            margin-top: 20px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+        }
+        .Folha
+        {
+            position: absolute;
+            top:32%; /*Distancia de cima */
+            left: 63%;  /*Distancia da esquerda*/
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="texto">PERFIL</div>
+
+        <div class="navigation">
+            <div class="toggle"><span></span></div>
+            <ul>
+                <li style="--i:1;"><a href="index.html">Inicio</a></li>
+                <li style="--i:2;"><a href="../pages/sobre.html">Sobre</a></li>
+                <li style="--i:3;"><a href="#">Carrinho</a></li>
+                <li style="--i:4;"><a href="#">Favoritos</a></li>
+                <li style="--i:5;"><a href="../pages/cadastro.html">Cadastre-se</a></li>
+                <li style="--i:5;"><a href="#">Produtos</a></li>
+   
+            </ul>
+           
+        </div>
+        <script>
+            let navigation = document.querySelector('.navigation');
+            document.querySelector('.toggle').onclick = function()
+            {
+                this.classList.toggle('active');
+                navigation.classList.toggle('active');
+   
+            }
+        </script>
+
+    </div>
+    <div class="linha_cabecalho"></div>
+    <div class="Folha"><img src="../images/Folha.png" width="630px"></div>
+</body>
+</html>

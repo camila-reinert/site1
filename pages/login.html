@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+   
+<style>
+    body
+    {
+        background-image: url(../images/Fundo.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%; /*largura*/
+        height: 100vh;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;  
+        overflow: hidden;
+    }
+    .form 
+    {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 440px;
+        background-image: linear-gradient(45deg, #cf1717, 
+        #d8a31d);
+        padding: 40px;
+        border-radius: 50px;
+        position: relative;
+        margin-top: 160px;
+    }
+
+    .titulo
+    {
+        font-size: 28px;
+        color: #000000;
+        font-weight: 600;
+        letter-spacing: -1px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+    .title::before,.title::after 
+    {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        left: 0px;
+        background-color: #000000;
+    }
+
+    .title::before 
+    {
+        width: 18px;
+        height: 18px;
+        background-color: #000000;
+    }
+
+    .title::after
+    {
+        width: 18px;
+        height: 18px;
+        animation: pulse 1s linear infinite;
+    }
+
+    .message, .signin 
+    {
+        color: rgba(0, 0, 0, 0.822);
+        font-size: 14px;
+    }
+
+    .signin {
+        text-align: center;
+    }
+
+    .signin a {
+        color: rgb(0, 0, 0);
+    }
+
+    .signin a:hover {
+        text-decoration: underline #0a0a0a;
+    }
+
+    .flex {
+        display: flex;
+        width: 100%;
+        gap: 6px;
+    }
+
+    .form label
+    {
+        position: relative;
+    }
+
+    .form label .input 
+    {
+        width: 430px;
+        padding: 10px 10px 20px 10px;
+        outline: 0;
+        border: 1px solid rgba(0, 0, 0, 0.397);
+        border-radius: 10px;
+    }
+
+    .form label .input + span {
+        position: absolute;
+        left: 10px;
+        top: 25px;
+        color: rgb(0, 0, 0);
+        font-size: 0.7em;
+        cursor: text;
+        transition: 0.3s ease;
+    }
+
+    .form label .input:placeholder-shown + span 
+    {
+        top: 30px;
+        font-size: 0.7em;
+        font-weight: 600;
+    }
+
+    .form label .input:focus + span,.form label .input:valid + span {
+        top: 27px;
+        font-size: 0.7em;
+        font-weight:500;
+    }
+
+    .form label .input:valid + span {
+        color: green;
+    }
+
+    .submit {
+        margin-top: 75px;
+        border: none;
+        outline: none;
+        background-color: #ffb700;
+        padding: 10px;
+        border-radius: 10px;
+        color: #000000;
+        font-size: 16px;
+        transform: .3s ease;
+    
+    }
+
+    .submit:hover {
+        background-image: linear-gradient(45deg, #dd933e, #dd2626);
+    }
+
+    @keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+    }
+
+</style>
+</head>
+
+
+<body>
+        <form action="../php/crud.php" method="post" class="form">
+            <p class="titulo">Login</p>
+          <label>
+            <input class="input" type="text" placeholder="email" name="email">
+            </label> 
+                
+            <label>
+                <input class="input" type="text" placeholder="senha" name="senha">
+            </label>
+            <button class="submit">Entrar</button>
+        </form> 
+</body>

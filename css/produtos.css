@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+     body
+        {
+            background-color: #FFE8C7;
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            overflow: hidden;
+            background-repeat:no-repeat;
+            width: 100%;
+            height: 100vh;
+            
+        }
+  
+        .cabecalho
+        {
+            background-image: linear-gradient(to right,#FF3131,#FF914D);
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            border: solid;
+            border-color: black;
+        }
+        .springshop
+        {
+
+            width: 30%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+        .texto2
+        {
+            font-family: 'Gabriela', serif;
+            font-size: 50px;
+            margin: 4%;
+        }
+        .favoritos
+        {
+           width: 40px;
+           height: 40px; 
+           margin-top: 2%;
+           padding-left: 7%;
+        
+        }
+        .linha
+        {
+            margin-top: -2vh;
+        }
+        .Fotos
+        {
+            position: absolute;
+            top:125px; /*Distancia de cima */
+            left: 90px;  /*Distancia da esquerda*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            width: 400px;
+            height: 70%;
+        }
+        .Texto
+        {
+            width: 300px;
+            text-align: justify;
+        }
+      
+        .Produtos
+        {
+            position: absolute;
+            top:175px; /*Distancia de cima */
+            left: 550px;  /*Distancia da esquerda*/
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            width: 400px;
+            height: 50%;
+            font-family: 'Gabriela', serif;
+            font-size: 19px;
+            text-align: justify;
+        }
+        .Opcoes
+        {
+            display: flex;
+            flex-direction: row;
+            margin-right: 240px;
+            margin-top: 15px;
+        }
+        .botaofavoritos
+        {
+            width: 300px;
+            height: 70px;
+            position: absolute;
+            top:550px; /*Distancia de cima */
+            left: 600px;  /*Distancia da esquerda*/
+            font-family: 'Gabriela', serif;
+            cursor: pointer;
+            background-image: linear-gradient(#FFDE59, #FF914D);
+        }
+        .icones
+        {
+            width: 40%;
+            height: 100px;
+        }
+        .compras
+        {
+           width: 40px;
+           height: 40px;
+           margin-top: 4%;
+           padding-left: 9%;
+        }
+        .whatsapp-link
+        {
+
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 1000;
+        }
+
+        .fa-whatsapp
+        {
+            margin-top: 16px;
+
+        }
+        .navigation
+        {
+            position:absolute ;
+            right: 20px;
+            top: 20px;
+            height: 20px;
+            width: 250px;
+            z-index: 100;
+            margin-right: 40px;
+        }
+        .toggle
+        {
+            position: relative;
+            top: 0;
+            right: 5px;
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: #095364;
+            font-family: 'Gabriela', serif;
+            font-size: 25px;
+        }
+        .toggle::before
+        {
+            content: 'Menu';
+            margin-left: 10px;
+        }
+        .toggle.active::before
+        {
+            content: 'Close';
+        }    
+        .toggle span
+        {
+            position: relative;
+            width: 20px;
+            height: 50px;
+        }
+        .toggle span::before
+        {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width:100% ;
+            height: 2px;
+            background:#095364;
+            transition: 0.5s;
+        }
+        .toggle span::after
+        {
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width:100% ;
+            height: 2px;
+            background:#095364;
+            transition: 0.5s;
+        }
+        .toggle.active span::before
+        {
+            transform: rotate(225deg);
+            top: 24px;
+        }
+        .toggle.active span::after
+        {
+            transform: rotate(135deg);
+            top: 24px;
+        
+        }
+        ul
+        {
+            position: relative;
+            list-style: none;
+            display: flex;
+            flex-direction: column; 
+        }
+        ul li
+        {
+            position: relative;
+            list-style: none;
+            transition: 0.5s;
+            visibility: hidden;
+            opacity: 0; 
+            transform: translateX(-250px);
+            transition-delay: calc(0.1s * var(--i));
+        }
+        .navigation.active ul li
+        {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(0px);
+        
+        }
+        ul li a
+        {
+            position: relative;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            height: 50px;
+            background: #fff;
+            color: #095364;
+            transition: 0.5s;
+            font-family: 'Gabriela', serif;
+        }
+        ul li a:hover
+        {
+            background: #f6f6f6;
+            color: #87C6D4;
+            transition: 0s;
+        }
+        .Folha
+        {
+            position: absolute;
+            top:32%; /*Distancia de cima */
+            left: 63%;  /*Distancia da esquerda*/
+        }
