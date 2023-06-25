@@ -13,8 +13,10 @@
             width: 100%;
             height: 100px;
             display: flex;
+            margin-top: -900px;
             flex-direction: row;
             justify-content: space-between;
+            position: absolute;
         }
         .springshop
         {
@@ -89,12 +91,48 @@
             width: 100%;
             height: 4px;
         }
+        .botoes
+        {
+            width: 1000px;
+            height: 80px;
+            margin-top: -700px;
+            margin-left: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position: absolute;
+            align-items: center;
+        }
+        .BT
+        {
+
+            width: 200px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .categoria
+        {
+            width: 130px;
+            height: 30px;
+            border-radius: 20px;
+            background: rgb(249, 157, 82);
+            color:rgb(55, 27, 5);
+            border: none;
+        }
+        .categoria:hover
+        {
+            background-color: #d76118;
+        }
         .dVendidos
         {
             width: 100%;
             height: 100px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
            margin-top: 20px;
         }
@@ -118,7 +156,7 @@
             height: 40px;
             font-size: 30px;
             font-family: 'Gabriela', serif;
-            margin-top: 260px;
+            margin-top: -170px;
             margin-left: 20px;
         }
         .BT1
@@ -139,3 +177,91 @@
            margin-left: 95%;
            position: fixed;
         }
+
+        .container
+        {
+            position: relative;
+            padding: 15px;
+            max-width: 840px;
+            max-height: 400px;
+            margin-top: 200px;
+            margin-left: 500px;
+
+        }
+        .gallery-wrapper
+        {
+            overflow-x: auto;
+        }
+        .gallery
+        {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 15px;
+        }
+        .arrow-left,
+        .arrow-right
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: auto;
+            bottom: 0;
+            font-size: 20px;
+            line-height: 250px;
+            width: 40px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            background: linear-gradient(to left, transparent 0%, black 200%);
+            opacity: 0.1;
+            transition: all 600ms ease-in-out;
+        }
+        .arrow-right
+        {
+            left: auto;
+            right: 0;
+            background: linear-gradient(to right, transparent 0%, black 200%);
+        }
+        .arrow-left:hover,
+        .arrow-right:hover
+        {
+            opacity: 1;
+        }
+        .item{
+            flex-shrink: 0;
+            opacity: 0.6;
+            transition: all 600ms ease-in-out;
+        }
+        .current-item
+        {
+            opacity: 1;
+        }
+        .gallery-wrapper::-webkit-scrollbar 
+        {
+            display: none;
+        }
+        .gallery-wrapper 
+        {
+            -ms-overflow-style: none;
+            scrollbar-width: none; 
+        }
+        .cyan {
+            background: cyan;
+          }
+          
+          .deeppink {
+            background: deeppink;
+          }
+          
+          .turquoise {
+            background: turquoise;
+          }
+          
+          .darkblue {
+            background: darkblue;
+          }
+          
+          .purple {
+            background: purple;
+          }
