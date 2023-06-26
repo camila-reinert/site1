@@ -1,0 +1,178 @@
+body
+{
+    background-image: url(fundo_perfil.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%; /*largura*/
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;  
+    overflow: hidden;
+}
+.cabecalho
+{
+    background-image: linear-gradient(to right, #f54b4b, #f7853e);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.linha_cabecalho
+{
+    background-color: black;
+    width: 100%;
+    height: 4px;
+}
+.texto
+{
+    width: 200px;
+    height: 60px;
+    font-family: 'Gabriela', serif;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+.navigation
+{
+    position:absolute ;
+    right: 20px;
+    top: 20px;
+    height: 20px;
+    width: 250px;
+    z-index: 100;
+    margin-right: 40px;
+}
+.toggle
+{
+    position: relative;
+    top: 0;
+    right: 5px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #000000;
+    font-family: 'Gabriela', serif;
+    font-size: 25px;
+}
+.toggle::before
+{
+    content: 'Menu';
+    margin-left: 10px;
+}
+.toggle.active::before
+{
+    content: 'Close';
+}    
+.toggle span
+{
+    position: relative;
+    width: 20px;
+    height: 50px;
+}
+.toggle span::before
+{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width:100% ;
+    height: 2px;
+    background:#000000;
+    transition: 0.5s;
+}
+.toggle span::after
+{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width:100% ;
+    height: 2px;
+    background:#000000;
+    transition: 0.5s;
+}
+.toggle.active span::before
+{
+    transform: rotate(225deg);
+    top: 24px;
+}
+.toggle.active span::after
+{
+    transform: rotate(135deg);
+    top: 24px;
+
+}
+ul
+{
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+}
+ul li
+{
+    position: relative;
+    list-style: none;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0; 
+    transform: translateX(-250px);
+    transition-delay: calc(0.1s * var(--i));
+}
+.navigation.active ul li
+{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+
+}
+ul li a
+{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    height: 50px;
+    background: #0f0f0f;
+    color: #d87513;
+    transition: 0.5s;
+    font-family: 'Gabriela', serif;
+}
+ul li a:hover
+{
+    background: #0f0f0f;
+    color: #deb471;
+    transition: 0s;
+}
+.perfil
+{
+    background-color: aqua;
+    width: 120px;
+    height: 120px;
+    margin-top: 170px;
+    margin-right: 1000px;
+    cursor: pointer;
+}
+.texto1
+{
+    background-color: rgb(223, 18, 18);
+    width: 40%;
+    height: 100px;
+    margin-top: 100px;
+    font: 50px;
+    font-family: 'Gabriela', serif;
+    position: fixed;
+    margin-left: 50px;
+}

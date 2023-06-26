@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="perfil.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="texto">PERFIL</div>
+
+        <div class="texto1">
+            <div class="texto1">Editar</div>
+        </div>
+
+        
+
+        <div class="navigation">
+            <div class="toggle"><span></span></div>
+            <ul>
+                <li style="--i:1;"><a href="telainicial.html">Inicio</a></li>
+                <li style="--i:2;"><a href="sobre.html">Sobre</a></li>
+                <li style="--i:3;"><a href="#">Carrinho</a></li>
+                <li style="--i:4;"><a href="#">Favoritos</a></li>
+                <li style="--i:5;"><a href="cadastro.html">Cadastre-se</a></li>
+                <li style="--i:5;"><a href="#">Produtos</a></li>
+   
+            </ul>
+           
+        </div>
+        
+        <script>
+            let navigation = document.querySelector('.navigation');
+            document.querySelector('.toggle').onclick = function()
+            {
+                this.classList.toggle('active');
+                navigation.classList.toggle('active');
+   
+            }
+        </script>
+            <a>
+            <img src="perfil.png" class="perfil" width="20px">
+            </a>
+    
+
+    </div>
+    <div class="linha_cabecalho"></div>
+</body>
+</html>
