@@ -13,10 +13,9 @@
             width: 100%;
             height: 100px;
             display: flex;
-            margin-top: -900px;
+            margin-top: 0;
             flex-direction: row;
             justify-content: space-between;
-            position: absolute;
         }
         .springshop
         {
@@ -85,27 +84,20 @@
            margin-top: 2%;
            padding-left: 9%;
         }
-        .linha_cabecalho
-        {
-            background-color: black;
-            width: 100%;
-            height: 4px;
-        }
+
         .botoes
         {
             width: 1000px;
             height: 80px;
-            margin-top: -700px;
-            margin-left: 500px;
+            margin-top: 0;
+            margin-left: 300px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            position: absolute;
             align-items: center;
         }
         .BT
         {
-
             width: 200px;
             height: 50px;
             display: flex;
@@ -136,27 +128,14 @@
             justify-content: space-between;
            margin-top: 20px;
         }
-        .linha_MaisVendidosD
-        {
-            background-color: black;
-            width: 40%;
-            height: 4px;
-            margin-top: 280px;
-        }
-        .linha_MaisVendidosE
-        {
-            background-color: black;
-            width: 40%;
-            height: 4px;
-            margin-top: 280px;
-        }
+
         .MaisVendidos
         {
             width: 230px;
             height: 40px;
             font-size: 30px;
             font-family: 'Gabriela', serif;
-            margin-top: -170px;
+            margin-top: -20px;
             margin-left: 20px;
         }
         .BT1
@@ -169,6 +148,27 @@
             border-radius: 50%;
             margin-left: 50px;
         }
+        .roupas1
+        { 
+            width: 100%;
+            height: 400px;  
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            justify-items: center;
+            margin-top: 60px;
+        }
+        
+        .roupa
+        {
+            width: 200px;
+            height: 300px;
+        }
+        .item current-item
+        {
+            width: 200px;
+            height: 300px;
+        }
         .whatsapp
         {
            width: 50px;
@@ -180,12 +180,13 @@
 
         .container
         {
+            background-color: pink;
             position: relative;
             padding: 15px;
             max-width: 840px;
             max-height: 400px;
-            margin-top: 200px;
-            margin-left: 500px;
+            margin-top: 100px;
+            margin-left: 300px;
 
         }
         .gallery-wrapper
@@ -246,22 +247,3 @@
             -ms-overflow-style: none;
             scrollbar-width: none; 
         }
-        .cyan {
-            background: cyan;
-          }
-          
-          .deeppink {
-            background: deeppink;
-          }
-          
-          .turquoise {
-            background: turquoise;
-          }
-          
-          .darkblue {
-            background: darkblue;
-          }
-          
-          .purple {
-            background: purple;
-          }
