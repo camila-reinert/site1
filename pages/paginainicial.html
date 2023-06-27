@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela inicial</title>
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/tela.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="springshop">
+            <div class="texto2">SPRING SHOP</div>
+        </div>
+       
+        <div class="pesquisa">
+            <img src="images/pesquisa.png" width="20px">
+            <input type="text" class="caixa">
+            x
+     </div>
+        <div class="icones">
+        <a href= "#" a>
+          <img src="images/favoritos.png" class="favoritos">
+        </a>
+        <a href= "pages/carrinho.html" a>
+          <img src="images/compras.png" class="compras">
+        </a>
+
+            <a href= "pages/perfil.html" a>
+                <img src="images/perfil.png" class="perfil">
+            </a>
+
+
+       
+        </div>
+
+
+        <div class="navigation">
+            <div class="toggle"><span></span></div>
+            <ul>
+                <li style="--i:1;"><a href="index.html">Inicio</a></li>
+                <li style="--i:2;"><a href="pages/sobre.html">Sobre</a></li>
+                <li style="--i:3;"><a href="pages/carrinho.html">Carrinho</a></li>
+                <li style="--i:4;"><a href="#">Favoritos</a></li>
+                <li style="--i:5;"><a href="pages/cadastro.html">Cadastre-se</a></li>
+   
+            </ul>
+           
+        </div>
+        <script>
+            let navigation = document.querySelector('.navigation');
+            document.querySelector('.toggle').onclick = function()
+            {
+                this.classList.toggle('active');
+                navigation.classList.toggle('active');
+   
+            }
+        </script>
+    
+
+    </div>
+    <div class="linha_cabecalho"></div>
+
+    <div class="botoes">
+        <div class="BT">
+            <button class="categoria">Moletons/Casacos</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Blusas</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Camisetas</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Calças</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Shorts</button>
+        </div>
+        <div class="BT">
+            <button class="categoria">Biquini</button>
+        </div>
+    </div>
+   
+
+
+    <div class="container">
+        <button class="arrow-left control" aria-label="Previous image"></button>
+        <button class="arrow-right control" aria-label="Next image"></button>
+        <div class="gallery-wrapper">
+          <div class="gallery">
+            <img src="images/9.png" height="250px" alt="" class="item current-item">
+            <img src="images/17.png" height="250px" alt="" class="item">
+            <img src="images/19.png" height="250px" alt="" class="item">
+            <img src="images/11.png" height="250px" alt="" class="item">
+            <img src="images/9.png"  height="250px" alt="" class="item">
+          </div>
+        </div>
+      </div>
+
+
+    <div class="dVendidos">  
+        <div class="linha_MaisVendidosD"></div>
+            <div class="MaisVendidos">Mais Vendidos</div>
+        <div class="linha_MaisVendidosE"></div>
+    </div>
+
+
+    <div class="roupas1">
+        <img src="images/19.png" class="roupa">
+        <img src="images/18.png" class="roupa">
+        <img src="images/3.png" class="roupa">
+        <img src="images/4.png" class="roupa">
+        <img src="images/5.png" class="roupa">
+        <img src="images/15.png" class="roupa">
+        <img src="images/11.png" class="roupa">
+    </div>
+ 
+   <a class= "whatsapp-link" href="https://web.whatsapp.com/send?phone=5547992810642" target="_blank">
+     <i class="fa fa-whatsapp"></i>
+    </a>

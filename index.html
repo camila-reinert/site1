@@ -4,125 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tela inicial</title>
-     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/tela.css">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="cabecalho">
-        <div class="springshop">
-            <div class="texto2">SPRING SHOP</div>
-        </div>
-       
-        <div class="pesquisa">
-            <img src="images/pesquisa.png" width="20px">
-            <input type="text" class="caixa">
-            x
-     </div>
-        <div class="icones">
-        <a href= "#" a>
-          <img src="images/favoritos.png" class="favoritos">
-        </a>
-        <a href= "pages/carrinho.html" a>
-          <img src="images/compras.png" class="compras">
-        </a>
-
-            <a href= "pages/perfil.html" a>
-                <img src="images/perfil.png" class="perfil">
-            </a>
-
-
-       
-        </div>
-
-
-        <div class="navigation">
-            <div class="toggle"><span></span></div>
-            <ul>
-                <li style="--i:1;"><a href="index.html">Inicio</a></li>
-                <li style="--i:2;"><a href="pages/sobre.html">Sobre</a></li>
-                <li style="--i:3;"><a href="pages/carrinho.html">Carrinho</a></li>
-                <li style="--i:4;"><a href="#">Favoritos</a></li>
-                <li style="--i:5;"><a href="pages/cadastro.html">Cadastre-se</a></li>
+    <title>login</title>
    
-            </ul>
-           
-        </div>
-        <script>
-            let navigation = document.querySelector('.navigation');
-            document.querySelector('.toggle').onclick = function()
-            {
-                this.classList.toggle('active');
-                navigation.classList.toggle('active');
-   
-            }
-        </script>
+<style>
+    body
+    {
+        background-image: url(images/Fundo.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%; /*largura*/
+        height: 100vh;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;  
+        overflow: hidden;
+    }
+    .form 
+    {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 440px;
+        background-image: linear-gradient(45deg, #cf1717, 
+        #d8a31d);
+        padding: 40px;
+        border-radius: 50px;
+        position: relative;
+        margin-top: 160px;
+    }
+
+    .titulo
+    {
+        font-size: 28px;
+        color: #000000;
+        font-weight: 600;
+        letter-spacing: -1px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+    .title::before,.title::after 
+    {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        left: 0px;
+        background-color: #000000;
+    }
+
+    .title::before 
+    {
+        width: 18px;
+        height: 18px;
+        background-color: #000000;
+    }
+
+    .title::after
+    {
+        width: 18px;
+        height: 18px;
+        animation: pulse 1s linear infinite;
+    }
+
+    .message, .signin 
+    {
+        color: rgba(0, 0, 0, 0.822);
+        font-size: 14px;
+    }
+
+    .signin {
+        text-align: center;
+    }
+
+    .signin a {
+        color: rgb(0, 0, 0);
+    }
+
+    .signin a:hover {
+        text-decoration: underline #0a0a0a;
+    }
+
+    .flex {
+        display: flex;
+        width: 100%;
+        gap: 6px;
+    }
+
+    .form label
+    {
+        position: relative;
+    }
+
+    .form label .input 
+    {
+        width: 430px;
+        padding: 10px 10px 20px 10px;
+        outline: 0;
+        border: 1px solid rgba(0, 0, 0, 0.397);
+        border-radius: 10px;
+    }
+
+    .form label .input + span {
+        position: absolute;
+        left: 10px;
+        top: 25px;
+        color: rgb(0, 0, 0);
+        font-size: 0.7em;
+        cursor: text;
+        transition: 0.3s ease;
+    }
+
+    .form label .input:placeholder-shown + span 
+    {
+        top: 30px;
+        font-size: 0.7em;
+        font-weight: 600;
+    }
+
+    .form label .input:focus + span,.form label .input:valid + span {
+        top: 27px;
+        font-size: 0.7em;
+        font-weight:500;
+    }
+
+    .form label .input:valid + span {
+        color: green;
+    }
+
+    .submit {
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        background-color: #ff7300;
+        padding: 10px;
+        border-radius: 10px;
+        color: #000000;
+        font-size: 16px;
+        transform: .3s ease;
     
-
-    </div>
-    <div class="linha_cabecalho"></div>
-
-    <div class="botoes">
-        <div class="BT">
-            <button class="categoria">Moletons/Casacos</button>
-        </div>
-        <div class="BT">
-            <button class="categoria">Blusas</button>
-        </div>
-        <div class="BT">
-            <button class="categoria">Camisetas</button>
-        </div>
-        <div class="BT">
-            <button class="categoria">Calças</button>
-        </div>
-        <div class="BT">
-            <button class="categoria">Shorts</button>
-        </div>
-        <div class="BT">
-            <button class="categoria">Biquini</button>
-        </div>
-    </div>
-   
+    }
 
 
-    <div class="container">
-        <button class="arrow-left control" aria-label="Previous image"></button>
-        <button class="arrow-right control" aria-label="Next image"></button>
-        <div class="gallery-wrapper">
-          <div class="gallery">
-            <img src="images/9.png" height="250px" alt="" class="item current-item">
-            <img src="images/17.png" height="250px" alt="" class="item">
-            <img src="images/19.png" height="250px" alt="" class="item">
-            <img src="images/11.png" height="250px" alt="" class="item">
-            <img src="images/9.png"  height="250px" alt="" class="item">
-          </div>
-        </div>
-      </div>
+    @keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+    }
+
+</style>
+</head>
 
 
-    <div class="dVendidos">  
-        <div class="linha_MaisVendidosD"></div>
-            <div class="MaisVendidos">Mais Vendidos</div>
-        <div class="linha_MaisVendidosE"></div>
-    </div>
-
-
-    <div class="roupas1">
-        <img src="images/19.png" class="roupa">
-        <img src="images/18.png" class="roupa">
-        <img src="images/3.png" class="roupa">
-        <img src="images/4.png" class="roupa">
-        <img src="images/5.png" class="roupa">
-        <img src="images/15.png" class="roupa">
-        <img src="images/11.png" class="roupa">
-    </div>
- 
-   <a class= "whatsapp-link" href="https://web.whatsapp.com/send?phone=5547992810642" target="_blank">
-     <i class="fa fa-whatsapp"></i>
-    </a>
+<body>
+        <form action="../php/crud.php" method="post" class="form">
+            <p class="titulo">Login</p>
+          <label>
+            <input class="input" type="text" placeholder="email" name="email">
+            </label> 
+                
+            <label>
+                <input class="input" type="text" placeholder="senha" name="senha">
+            </label>
+            <button class="submit">Entrar</button>
+            
+            <a href="pages/cadastro.html">
+            <button class="submit"> Cadastrar 
+            </a>
+            </button>
+        </form> 
+</body>
